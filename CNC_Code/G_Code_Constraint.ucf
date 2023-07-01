@@ -1,0 +1,58 @@
+## This file is a general .ucf for Nexys2 rev A board
+## To use it in a project:
+## - remove or comment the lines corresponding to unused pins
+## - rename the used signals according to the project
+
+## Signals Led<7>Led<4> are assigned to pins which change type from s3e500 to other dies using the same package
+## Both versions are provided in this file.
+## Keep only the appropriate one, and remove or comment the other one.
+
+
+## Clock pin for Nexys 2 Board
+NET "i_Clock50MHz"         LOC = "B8";    # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK,                 Sch name = GCLK0
+
+# Leds
+NET "o_LEDs<0>"      LOC = "J14";   # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL,       Sch name = JD10/LD0
+NET "o_LEDs<1>"      LOC = "J15";   # Bank = 1, Pin name = IO_L14P_1/A4/RHCLK6, Type = RHCLK/DUAL,       Sch name = JD9/LD1
+NET "o_LEDs<2>"      LOC = "K15";   # Bank = 1, Pin name = IO_L12P_1/A8/RHCLK2, Type = RHCLK/DUAL,       Sch name = JD8/LD2
+NET "o_LEDs<3>"      LOC = "K14";   # Bank = 1, Pin name = IO_L12N_1/A7/RHCLK3/TRDY1, Type = RHCLK/DUAL, Sch name = JD7/LD3
+NET "o_LEDs<4>"      LOC = "E17";   # Bank = 1, Pin name = IO, Type = I/O,                               Sch name = LD4? s3e500 only
+NET "o_LEDs<5>"      LOC = "P15";   # Bank = 1, Pin name = IO, Type = I/O,                               Sch name = LD5? s3e500 only
+NET "o_LEDs<6>"      LOC = "F4";    # Bank = 3, Pin name = IO, Type = I/O,                               Sch name = LD6? s3e500 only
+NET "o_LEDs<7>"      LOC = "R4";    # Bank = 3, Pin name = IO/VREF_3, Type = VREF,                       Sch name = LD7? s3e500 only
+
+# Switches
+NET "i_Select0"       LOC = "G18";   # Bank = 1, Pin name = IP, Type = INPUT,                             Sch name = SW0
+NET "i_Select1"       LOC = "H18";   # Bank = 1, Pin name = IP/VREF_1, Type = VREF,                       Sch name = SW1
+NET "i_Select2"       LOC = "K18";   # Bank = 1, Pin name = IP, Type = INPUT,                             Sch name = SW2
+
+# Buttons
+NET "i_Reset"      LOC = "B18";   # Bank = 1, Pin name = IP, Type = INPUT,                             Sch name = BTN0
+
+# 12 pin connectors
+
+#JB
+NET "i_LimitStartZ"       LOC = "M13";   # Bank = 1, Pin name = IO_L05N_1/VREF_1, Type = VREF,                Sch name = JB1
+NET "i_RXG"      	  LOC = "R18";   # Bank = 1, Pin name = IO_L02P_1/A14, Type = DUAL,                   Sch name = JB2
+NET "i_RXT"       LOC = "R15";   # Bank = 1, Pin name = IO_L03P_1, Type = I/O,                        Sch name = JB3
+NET "i_LimitEndY"         LOC = "T17";   # Bank = 1, Pin name = IO_L01N_1/A15, Type = DUAL,                   Sch name = JB4
+NET "i_LimitEndZ"       LOC = "P17";   # Bank = 1, Pin name = IO_L06P_1, Type = I/O,                        Sch name = JB7
+NET "i_LimitStartX"         LOC = "R16";   # Bank = 1, Pin name = IO_L03N_1/VREF_1, Type = VREF,                Sch name = JB8
+NET "i_LimitEndX"       LOC = "T18";   # Bank = 1, Pin name = IO_L02N_1/A13, Type = DUAL,                   Sch name = JB9
+NET "i_LimitStartY"         LOC = "U18";   # Bank = 1, Pin name = IO_L01P_1/A16, Type = DUAL,                   Sch name = JB10
+
+#JC
+NET "o_YStep"       		 LOC = "G15";   # Bank = 1, Pin name = IO_L18P_1, Type = I/O,                        Sch name = JC1
+NET "o_XDirection"       		 LOC = "J16";   # Bank = 1, Pin name = IO_L13N_1/A5/RHCLK5, Type = RHCLK/DUAL,       Sch name = JC2
+NET "o_EDirection"       		 LOC = "G13";   # Bank = 1, Pin name = IO_L20N_1, Type = I/O,                        Sch name = JC3
+NET "o_ZDirection"       		 LOC = "H16";   # Bank = 1, Pin name = IO_L16P_1, Type = I/O,                        Sch name = JC4
+NET "o_ZStep"       LOC = "H15";   # Bank = 1, Pin name = IO_L17N_1, Type = I/O,                        Sch name = JC7
+NET "o_EStep"       LOC = "F14";   # Bank = 1, Pin name = IO_L21N_1, Type = I/O,                        Sch name = JC8
+NET "o_XStep"       LOC = "G16";   # Bank = 1, Pin name = IO_L18N_1, Type = I/O,                        Sch name = JC9
+NET "o_YDirection"       LOC = "J12";   # Bank = 1, Pin name = IO_L15P_1/A2, Type = DUAL,                    Sch name = JC10
+
+#JD - NOTE: FoCr other JD pins see LD(3:0) above under "Leds"
+NET "o_BedTemp"       LOC = "J13";   # Bank = 1, Pin name = IO_L15N_1/A1, Type = DUAL,                    Sch name = JD1
+NET "o_HotTemp"       LOC = "M18";   # Bank = 1, Pin name = IO_L08N_1, Type = I/O,                        Sch name = JD2
+NET "o_FanSpeed"       LOC = "N18";   # Bank = 1, Pin name = IO_L08P_1, Type = I/O,                        Sch name = JD3
+NET "o_Waiting"       LOC = "P18";   # Bank = 1, Pin name = IO_L06N_1, Typ
