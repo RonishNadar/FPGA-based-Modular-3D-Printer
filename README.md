@@ -47,12 +47,12 @@ The code for the robot automation is provided above.
 
 ## Demonstration Video
 
-- 3D Printing Demo
+1. 3D Printing Demo
 
-https://drive.google.com/file/d/1t4UAHGC81zde_A08YZPD3bV_dZkhscCF/view?usp=sharing
-https://drive.google.com/file/d/1-L4NQ1OALyOLEQjKM2Tkkpd9sBdeq1kx/view?usp=sharing
+- https://drive.google.com/file/d/1t4UAHGC81zde_A08YZPD3bV_dZkhscCF/view?usp=sharing
+- https://drive.google.com/file/d/1-L4NQ1OALyOLEQjKM2Tkkpd9sBdeq1kx/view?usp=sharing
 
-- Modulrity Demo (Milling)
+2. Modulrity Demo (Milling)
 
-https://drive.google.com/file/d/1TUlYnzkdqgqkpXYkdak7sU4ZTnVcv832/view?usp=sharing
-https://drive.google.com/file/d/1XJeEiQJuOYYUQABSML6X-HdxjGy-oZ8y/view?usp=sharing
+- https://drive.google.com/file/d/1TUlYnzkdqgqkpXYkdak7sU4ZTnVcv832/view?usp=sharing
+- https://drive.google.com/file/d/1XJeEiQJuOYYUQABSML6X-HdxjGy-oZ8y/view?usp=sharing
