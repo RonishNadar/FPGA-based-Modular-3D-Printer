@@ -24,7 +24,7 @@ to parallelize the task s and improve efficiency.
 ## Mechanical Design
 ![123](https://github.com/RonishNadar/FPGA-based-Modular-3D-Printer/assets/137984084/25b6ed28-0f47-4415-b739-8b2f9e472351)
 
-The frane is constructed using aluminium. The Z-axis motion of the hot bed is done through two lead screw based actuator and the X-axis and Y-axis are taken care using slider based actuator. 
+The frame is constructed using aluminium. The Z-axis motion of the hot bed is done through two lead screw based actuator and the X-axis and Y-axis are taken care using slider based actuator. 
 
 ---
 
